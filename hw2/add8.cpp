@@ -1,0 +1,28 @@
+//
+// add8.cpp
+// purpose: sum of 8 floating point numbers
+// by: Freddy Davaris
+// Date: 01/26/2014
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+    double a, b, c, d, e, f, g, h, sum;
+
+    cout << "Enter eight numbers: ";
+    cin  >> a;
+    cin  >> b;
+    cin  >> c;
+    cin  >> d;
+    cin  >> e;
+    cin  >> f;
+    cin  >> g;
+    cin  >> h;
+    sum = a + b + c + d + e + f + g + h;
+    cout << "The sum is " << sum << endl;
+
+    return 0;
+}

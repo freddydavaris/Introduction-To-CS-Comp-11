@@ -1,0 +1,195 @@
+using namespace std; 
+// 
+// implementation of a Fishtank class
+//
+
+#include <stdlib.h>
+#include "Fish.h"
+#include "FishTank.h"
+
+// Purpose: Constructor that sets the integer values to 
+//          0 and fills the tank picture with all blanks. 
+// Argumenmts: No arguments. 
+
+    FishTank::FishTank()
+{
+  for (int i = 0; i < MAX_HGT; i++) {
+    for (int k = 0; k < MAX_WID; k++) {
+	  FishTank_image[i][k] = ' '; 
+  }
+ }
+   NUM_OF_FISH_IN_TANK = 0; 
+   hgt = 0;
+   wid = 0;
+}
+    
+// Purpose: A constructor that sets the height and width 
+//          to the given values and otherwise behaves like
+//          the nullary constructor above.
+// Arguments: Int height and int width, which are the 
+//            height and width of the tank.
+    
+    FishTank::FishTank(int hgt, int wid)
+{ 
+
+  for (int i = 0; i < hgt; i++) {
+    for (int k = 0; k < wid; k++) {
+	  FishTank_image[i][k] = ' '; 
+  }
+ }
+
+}    
+
+// Purpose: Sets the height of the tank to the inputed
+//          value. 
+// Arguments: Int new_hgt.
+    
+void FishTank::setHeight(int new_hgt)
+{
+        hgt = new_hgt;
+}   
+
+// Purpose: Sets the width of the tank to the inputed
+//          value. 
+// Arguments: Int new_wid.    
+    
+void FishTank::setWidth(int new_wid)
+{   
+      wid = new_wid; 
+}  
+
+// Purpose: Returns the height of the tank.
+// Arguments: No arguments 
+
+    int FishTank::getHeight()
+{
+      return hgt;
+}
+
+// Purpose: Returns the width of the tank.
+// Arguments: No arguments 
+
+    int FishTank::getWidth()
+{ 
+      return wid;
+}
+    int FishTank::getMaxFish()
+{
+      return MAX_FISH; 
+}
+    int FishTank::getNumFish()
+{
+      return NUM_OF_FISH_IN_TANK;
+}  
+    
+// Purpose: Adds the given fish to the tank if there
+//          is room in the tank and returns "true". 
+//          returns "false" if there is no more room for
+//          new fish.
+// Arguments: A new inputed Fish. 
+
+bool FishTank::addFish(Fish f)
+{
+        cout << "Adding fish" << endl;
+        
+      
+        if (NUM_OF_FISH_IN_TANK < MAX_FISH) { 
+          myfish[NUM_OF_FISH_IN_TANK] = f;      
+	  NUM_OF_FISH_IN_TANK++;
+		
+	        cout << "NUM: " << NUM_OF_FISH_IN_TANK << endl; 
+	        return true;
+        }
+        else { 
+	        return false;
+        }              
+ }
+
+// Purpose: Clears the character map and fills it with spaces. 
+// Arguments: No arguments. 
+
+void FishTank::clearTank()
+ {
+   for (int i = 0; i < MAX_HGT; i++) {
+    for (int k = 0; k < MAX_WID; k++) {
+	  FishTank_image[i][k] = ' ';	  
+    }
+   }
+ }
+ 
+// Purpose: Prints the character map on cout. It does not 
+//          maneuver the cursor at all; it just prints.
+// Arguments: No arguments.
+	  
+void FishTank::showTank()
+{
+  for (int i = 0; i < hgt; i++) {
+    for (int k = 0; k < wid; k++) {
+	  cout << FishTank_image[i][k];
+  }
+  cout << endl;
+ }
+}
+
+// Purpose: Updates the character map at the given row and 
+//          column with the new character. 
+// Arguments: The int row and col at which the fish image will 
+//            be updated and the image of the fish as a char. 
+
+void FishTank::updateAt(int row, int col, char newChar)   
+{
+    if (col >= wid) {
+      col = col - wid;
+    }
+    if (col < 0) {
+      col = col + wid;
+    }
+    if (row >= hgt) {
+      row = row - hgt;
+    }
+    if (row < 0) {
+      row = row + hgt;
+    }
+   FishTank_image[row][col] = newChar;   
+} 
+   
+// Purpose: Runs the tank simulation. 
+// Arguments: Takes in a boolean "singleStep" were, 
+//            if it is true the simulation runs by using the
+//            keybord button "enter" whereas if it is false
+//            the simulation runs continuously by itself.
+//            fps is the number of frames per second. 
+
+void FishTank::simulate(bool singleStep, int fps)
+{
+  
+ 
+  cout << "\033[2J";  // Clear screen
+  while (true)
+  {
+      cout << "\33[H";    // Home cursor
+      for (int i = 0; i < NUM_OF_FISH_IN_TANK; i++) {  
+	    cerr << "NUM FISH IN TANK: " << NUM_OF_FISH_IN_TANK << endl;
+	  //  exit(1);
+            myfish[i].draw(this);
+      }
+      showTank();
+      for (int k = 0; k < NUM_OF_FISH_IN_TANK; k++) {  
+          myfish[k].move(hgt, wid);
+      }
+      cout.flush(); // immediately cout's content 
+      if (singleStep == false) {
+           usleep(1000000 / fps);  // used to calculate how the
+	                           // program sleeps between frames. 
+      }
+      else if (singleStep == true) {
+        if (system("read x < /dev/tty") != 0) // Runs the simulation 
+					      // only when the button
+					      // "enter" is pressed.
+            exit(0);
+      }
+      clearTank();
+  }
+}
+
+    

@@ -1,0 +1,122 @@
+// Modified by: Freddy Davaris
+// Date : 02/24/2014
+// Program name : avg_age.cpp
+// Purpose : eads in years from cin until it reads a 
+// sentinel of 0 (zero), then prints how many of 
+// those years are over the average value of all the input. 
+
+#include <iostream>
+using namespace std;
+
+const int SPACE_NAMES =  50000;
+const int SPACE_YEARS = 50000; 
+const int SENTINEL = -1;
+
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////   Interfaces  ///////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+double num_average(string nums[SPACE_NAMES], int numes[SPACE_YEARS], int x);
+
+
+int num_names(int nums[SPACE_NAMES], string x);
+
+
+
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////   Client  /////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+        int years[SPACE_YEARS];
+	string names[SPACE_NAMES];
+        int pos = 0;
+        int y;
+	string x;
+        double average;
+        int howmanynames;
+	
+
+        do {
+                cin >> y >> x;
+                y = years[pos];
+                x = names[pos];  
+		pos++;
+        } 
+	
+        while (y != SENTINEL);
+	 if (pos > (SPACE_YEARS + 1)) {
+	  cerr << "too much data" << endl; 
+      
+	return 1; 
+	 }
+	
+        cout << "Enter a name:"<< endl; 
+        cin >> x;
+        howmanynames = num_names(names); 
+	 if (howmanynames == 0) {
+	   cout << "name not found" << endl; 
+	   
+	 return 1; 
+	 }
+	average = num_average(names, years, x); 
+        cout << "average age" << " " << "=" << " " << average << endl;
+        return 0;
+}
+
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////   Abstraction ///////////////////////////////
+///////////////////////////     Barrier   ///////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+//////////////////////////  Implementations /////////////////////////////
+
+
+
+//This program gives the sum of how many names 
+//of the input are found in the data file
+
+double num_average(string nums[SPACE_NAMES], int numes[SPACE_YEARS], int x)
+{
+  int sum_of_names = 0; 
+  int sum_of_years = 0; 
+  int pos = 0;
+  int extrayear;
+  int current_year = 2014; 
+  double average = 0; 
+  
+        while (nums[pos] != SENTINEL) {
+		
+	  if (nums[SPACE_NAMES] == x){
+	    sum_of_names = sum_of_names + 1;
+	    
+	    extrayear = nums[SPACE_YEARS];
+	    sum_of_years = sum_of_years + extrayear;
+	    
+	   
+	  }
+                pos++;
+	}
+	   average = current_year - (sum_of_years / sum_of_names);
+	  
+      return average;
+        
+}
+
+int num_names(int nums[SPACE_NAMES], string x)
+{
+  int sum_of_names = 0; 
+  int pos = 0
+  
+        while (nums[pos] != SENTINEL) {
+		
+	  if (nums[SPACE_NAMES] == x){
+	    sum_of_names = sum_of_names + 1;
+	    
+	  }
+	  return sum_of_names; 
+	}
+	
+}

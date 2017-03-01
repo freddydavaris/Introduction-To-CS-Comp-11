@@ -1,0 +1,103 @@
+Script started on Sun 26 Jan 2014 06:23:30 PM EST
+~/Desktop/comp11/hw2 > hostname
+dell24
+~/Desktop/comp11/hw2 > who
+fdavar01 pts/1        2014-01-26 18:19 (c-66-31-23-190.hsd1.ma.comcast.net)
+pbriggs  pts/4        2014-01-24 11:59 (hrilab.tufts.edu)
+ascrim01 pts/6        2014-01-26 17:23 (wr-130-64-188-49.medford.tufts.edu)
+cvrett01 pts/7        2014-01-26 17:35 (c-50-133-225-29.hsd1.ma.comcast.net)
+skalin01 pts/9        2014-01-26 18:08 (wr-130-64-184-232.medford.tufts.edu)
+iredel01 pts/10       2014-01-26 17:50 (209-6-89-215.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com)
+kwies01  pts/15       2014-01-26 16:28 (38.122.127.226)
+noah     pts/16       2014-01-26 18:04 (localhost:17.0)
+jmerfe02 pts/17       2014-01-26 17:12 (wr-130-64-217-182.medford.tufts.edu)
+skalin01 pts/12       2014-01-26 18:16 (wr-130-64-184-232.medford.tufts.edu)
+philb    pts/14       2014-01-26 17:38 (pool-72-74-164-23.bstnma.fios.verizon.net)
+jyeh01   pts/18       2014-01-26 17:35 (wr-130-64-178-26.medford.tufts.edu)
+csaund01 pts/19       2014-01-26 16:48 (resnet136-76.medford.tufts.edu)
+mding02  pts/21       2014-01-26 18:11 (209.222.5.234)
+kwies01  pts/22       2014-01-26 17:13 (38.122.127.226)
+wmerch01 pts/23       2014-01-26 13:31 (wr-130-64-98-149.medford.tufts.edu)
+fdavar01 pts/24       2014-01-26 16:28 (38.122.127.226)
+lrassa01 pts/25       2014-01-26 17:25 (wr-130-64-195-133.medford.tufts.edu)
+mweber01 pts/26       2014-01-26 16:11 (c-71-192-153-155.hsd1.ma.comcast.net)
+cvrett01 pts/27       2014-01-26 17:25 (c-50-133-225-29.hsd1.ma.comcast.net)
+susikp   pts/28       2014-01-25 10:28 (pool-100-0-96-224.bstnma.fios.verizon.net)
+ascour01 pts/29       2014-01-26 17:35 (wr-130-64-186-137.medford.tufts.edu)
+aluna02  pts/30       2014-01-26 16:29 (209-6-92-245.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com)
+smckee01 pts/31       2014-01-26 17:30 (resnet143-109.medford.tufts.edu)
+rleung02 pts/32       2014-01-26 17:04 (wr-130-64-190-164.medford.tufts.edu)
+wmerch01 pts/33       2014-01-26 17:14 (wr-130-64-98-149.medford.tufts.edu)
+ajayak02 pts/35       2014-01-26 17:45 (resnet150-171.medford.tufts.edu)
+kwies01  pts/36       2014-01-26 17:26 (38.122.127.226)
+cjacks04 pts/37       2014-01-26 17:41 (dhcp30-190.medford.tufts.edu)
+ecolto01 pts/39       2014-01-26 17:33 (resnet150-73.medford.tufts.edu)
+aherma04 pts/40       2014-01-26 18:16 (10.244.144.131)
+moti     pts/41       2014-01-26 18:19 (sunfire31.eecs.tufts.edu)
+philb    pts/42       2014-01-26 17:46 (pool-72-74-164-23.bstnma.fios.verizon.net)
+tbrews01 pts/43       2014-01-26 17:35 (38.122.127.226)
+rsethi01 pts/44       2014-01-26 17:56 (resnet138-16.medford.tufts.edu)
+fdavar01 pts/45       2014-01-26 18:23
+mbasar01 pts/49       2014-01-26 17:42 (38.122.127.226)
+nepste01 pts/50       2014-01-26 17:52 (wr-130-64-220-229.medford.tufts.edu)
+mbasar01 pts/53       2014-01-26 17:52 (38.122.127.226)
+sbekel01 pts/58       2014-01-26 16:50 (wr-130-64-179-135.medford.tufts.edu)
+fdavar01 pts/59       2014-01-26 16:09 (38.122.127.226)
+abrief01 pts/61       2014-01-26 16:12 (209-6-93-63.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com)
+poshea01 pts/64       2014-01-26 16:15 (wr-130-64-217-43.medford.tufts.edu)
+~/Desktop/comp11/hw2 > w
+ 18:23:34 up 155 days,  7:43, 45 users,  load average: 0.56, 0.48, 0.50
+USER     TTY      FROM              LOGIN@   IDLE   JCPU   PCPU WHAT
+fdavar01 pts/1    c-66-31-23-190.h 18:19    0.00s  0.08s  0.00s script
+pbriggs  pts/4    hrilab.tufts.edu Fri11    2days  0.07s  0.00s ./impcore
+ascrim01 pts/6    wr-130-64-188-49 17:23   51:08   0.07s  0.07s -tcsh
+cvrett01 pts/7    c-50-133-225-29. 17:35   48:22   0.41s  0.33s emacs ex3.ic
+skalin01 pts/9    wr-130-64-184-23 18:08   14:58   0.07s  0.07s -tcsh
+iredel01 pts/10   209-6-89-215.c3- 17:50    0.00s  1.51s  1.41s vim ex3.ic
+kwies01  pts/15   38.122.127.226   16:28    1:45m  0.56s  0.48s emacs digits.cp
+noah     pts/16   localhost:17.0   18:04    9:02   3.89s  0.06s -csh
+jmerfe02 pts/17   wr-130-64-217-18 17:12    7:47   0.95s  0.83s emacs program.c
+skalin01 pts/12   wr-130-64-184-23 18:16   33.00s  0.07s  0.07s -tcsh
+philb    pts/14   pool-72-74-164-2 17:38    2:15   1.49s  1.40s vim p3.tex
+jyeh01   pts/18   wr-130-64-178-26 17:35   20:44   0.30s  0.22s emacs adder.cpp
+csaund01 pts/19   resnet136-76.med 16:48   12:04   0.11s  0.11s -tcsh
+mding02  pts/21   209.222.5.234    18:11   10:17   1.02s  0.95s emacs addany.cp
+kwies01  pts/22   38.122.127.226   17:13    1:07m  1.34s  1.27s emacs digits.cp
+wmerch01 pts/23   wr-130-64-98-149 13:31    4:51m  0.31s  0.24s emacs avg2.cpp
+fdavar01 pts/24   38.122.127.226   16:28    1:49m  0.47s  0.39s emacs digits.cp
+lrassa01 pts/25   wr-130-64-195-13 17:25   57:24   0.06s  0.06s -tcsh
+mweber01 pts/26   c-71-192-153-155 16:11   25:46   0.32s  0.24s emacs digits.cp
+cvrett01 pts/27   c-50-133-225-29. 17:25   35.00s  0.12s  0.12s -tcsh
+susikp   pts/28   pool-100-0-96-22 Sat10   23:30m  0.16s  0.06s python
+ascour01 pts/29   wr-130-64-186-13 17:35   47:43   0.40s  0.33s emacs add8.cpp
+aluna02  pts/30   209-6-92-245.c3- 16:29   26:08   4.07s  3.93s emacs add8.cpp
+smckee01 pts/31   resnet143-109.me 17:30   24:58   3.05s  0.08s -tcsh
+rleung02 pts/32   wr-130-64-190-16 17:04   58:31   0.10s  0.10s -tcsh
+wmerch01 pts/33   wr-130-64-98-149 17:14   43.00s  0.62s  0.17s -tcsh
+ajayak02 pts/35   resnet150-171.me 17:45   14:39   1.37s  1.28s emacs digits.cp
+kwies01  pts/36   38.122.127.226   17:26   32:33   0.10s  0.10s -tcsh
+cjacks04 pts/37   dhcp30-190.medfo 17:41   18:15   0.10s  0.10s -tcsh
+ecolto01 pts/39   resnet150-73.med 17:33   25:56   2.73s  2.65s emacs digits.cp
+aherma04 pts/40   10.244.144.131   18:16    9.00s  0.08s  0.08s -tcsh
+moti     pts/41   sunfire31.eecs.t 18:19    3:55   0.06s  0.06s -tcsh
+philb    pts/42   pool-72-74-164-2 17:46    2:09   0.59s  0.43s okular p4.pdf
+tbrews01 pts/43   38.122.127.226   17:35   47:38   0.18s  0.11s emacs readme.tx
+rsethi01 pts/44   resnet138-16.med 17:56    9:52   2.38s  2.30s emacs digits.cp
+fdavar01 pts/45   -                18:23    0.00s  0.14s  0.12s w
+mbasar01 pts/49   38.122.127.226   17:42   35:53   0.09s  0.09s -tcsh
+nepste01 pts/50   wr-130-64-220-22 17:52   10:35   0.10s  0.10s -tcsh
+mbasar01 pts/53   38.122.127.226   17:52   30:05   0.33s  0.27s emacs digits.cp
+sbekel01 pts/58   wr-130-64-179-13 16:50    1:15m  1.01s  0.21s emacs digits.cp
+fdavar01 pts/59   38.122.127.226   16:09    2:11m  0.40s  0.33s emacs digits.cp
+abrief01 pts/61   209-6-93-63.c3-0 16:12    2:10m 20.54s 20.49s kate ex3.c ex5.
+poshea01 pts/64   wr-130-64-217-43 16:15   50:07   7.35s  0.14s -tcsh
+~/Desktop/comp11/hw2 > pwd
+/h/fdavar01/Desktop/comp11/hw2
+~/Desktop/comp11/hw2 > ls -l
+total 4
+-rw-------. 1 fdavar01 other 618 Jan 26 18:23 digits.cpp
+-rw-------. 1 fdavar01 other   0 Jan 26 18:23 typescript
+~/Desktop/comp11/hw2 > exit
+exit
+
+Script done on Sun 26 Jan 2014 06:23:43 PM EST
